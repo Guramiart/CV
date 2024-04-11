@@ -182,19 +182,19 @@ h2::before {
   background-size: 15px 15px;
 }
 .left-section .article__item #gps {
-  background-image: url("../../images/svg/gps-pin-icon.svg");
+  background-image: url("../images/svg/gps-pin-icon.svg");
 }
 .left-section .article__item #phone {
-  background-image: url("../../images/svg/phone-icon.svg");
+  background-image: url("/images/svg/phone-icon.svg");
 }
 .left-section .article__item #mail {
-  background-image: url("../../images/svg/mail-icon.svg");
+  background-image: url("/images/svg/mail-icon.svg");
 }
 .left-section .article__item #linkedin {
-  background-image: url("../../images/svg/linkedin-icon.svg");
+  background-image: url("/images/svg/linkedin-icon.svg");
 }
 .left-section .article__item #telegram {
-  background-image: url("../../images/svg/tg-icon.svg");
+  background-image: url("/images/svg/tg-icon.svg");
 }
 .left-section .article .item-title {
   font-weight: 500;
