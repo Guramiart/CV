@@ -1,0 +1,111 @@
+@import '../variable';
+
+.right-section {
+    padding-bottom: 50px;
+    width: 100%;
+
+    .title_block {
+        @include flex-column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -45px;
+        margin-right: -60px;
+        height: 270px;
+        background-color: $white-gray-color;
+
+        .title-wrap {
+            display: inline-block;
+            padding: 20px 40px;
+
+            .subtitle {
+                margin-top: 30px;
+                text-align: center;
+
+                .position {
+                    @include oswald-300-upper;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 90%;
+                        height: 1px;
+                        top: -10px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background-color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .article {
+        
+        margin-top: 47px;
+
+        span {
+            display: block;
+            margin-top: 40px;
+            line-height: 40px;
+        }
+
+        &__list {
+            margin-top: 50px;
+        }
+
+        &__item {
+            margin: 10px 0px;
+
+            .link {
+                color: $grey-color;
+            }
+
+        }
+    }
+
+    .work {
+        &__date {
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        &__position {
+            font-weight: 500;
+        }
+
+        &__placement {
+            margin-top: 5px;
+            text-decoration: underline;
+            font-style: italic;
+        }
+
+        &__accomplishments {
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+    }
+}
+
+@media (max-width: 820px)  {
+    .right-section .title_block {
+        margin-left: -60px;
+        background-color: $main-color;
+        color: $white-gray-color;
+        height: 180px;
+
+        .title-wrap .subtitle .position::before {
+            background-color: $white-gray-color;
+        }
+
+        h1 {
+            color: $white-gray-color;
+        }
+    }
+}
+
+@media (max-width: 560px)  {
+    .right-section .title_block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}

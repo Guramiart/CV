@@ -1,0 +1,19 @@
+@mixin oswald-300-upper {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+@mixin oswald-500-upper {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
