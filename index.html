@@ -7,10 +7,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
     <title>Artem Pasko - Web Developer</title>
 </head>
-<body>
-    <main class="page">
+<body class="body">
+    <div class="control">
+        <div id="download-btn" class="download-btn"></div>
+    </div>
+    <main class="page" id="page">
         <section class="left-section oswald-white">
             <div class="container">
                 <div class="wrapper">
@@ -131,12 +135,12 @@
                             <li class="article__item">Spring</li>
                             <li class="article__item">RESTful APIs</li>
                             <li class="article__item">Hibernate ORM</li>
+                            <li class="article__item">Gradle / Maven</li>
+                            <li class="article__item">SQL(MySQL, PostgreSQL)</li>
                             <li class="article__item">HTML / CSS</li>
                             <li class="article__item">JavaScript / TypeScript</li>
                             <li class="article__item">Angular</li>
                             <li class="article__item">UI/UX Design</li>
-                            <li class="article__item">SQL(MySQL, PostgreSQL)</li>
-                            <li class="article__item">Gradle / Maven</li>
                             <li class="article__item">Version Control / Git</li>
                         </ul>
                     </article>
@@ -155,5 +159,6 @@
             </div>
         </section>
     </main>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
