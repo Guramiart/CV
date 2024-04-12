@@ -7,7 +7,7 @@ function generatePDF() {
     const opt = {
         filename:     'pasko_cv.pdf',
         image:        { type: 'jpeg', quality: 0.98 },
-        html2canvas:  { scale: 2 },
+        html2canvas:  { windowWidth: 1240, scale: 2 },
         jsPDF:        { unit: 'in', format: 'tabloid', orientation: 'portrait' }
     };
     html2pdf().set(opt).from(element).save(); 
