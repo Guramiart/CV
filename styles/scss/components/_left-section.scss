@@ -21,6 +21,14 @@
         }
     }
 
+    .contact {
+        .article__wrap {
+            @media (max-width: 450px) {
+                flex-direction: row;
+            }
+        }
+    }
+
     .article {
 
         &__wrap {
@@ -46,6 +54,11 @@
             @include flex-row;
             align-items: center;
             gap: 20px;
+
+            .contact-item {
+                display: flex;
+                column-gap: 1.5rem;
+            }
 
             .contact-icon {
                 width: 30px;
@@ -80,21 +93,19 @@
         }
 
         .item-title {
-            font-weight: 500;
+            font-weight: 600;
             color: $white-gray-color;
         }
 
         .item-subtitle {
+            font-size: 0.9rem;
             width: fit-content;
-            font-size: 1rem;
             font-style: italic;
             color: $white-gray-color;
-            letter-spacing: 1px;
         }
     }
 
     .interests__item {
-        letter-spacing: 1px;
         line-height: 2rem;
     }
 }

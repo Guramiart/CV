@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
     <title>Artem Pasko - Web Developer</title>
@@ -25,24 +25,34 @@
                         <h2 class="article__title">Contact</h2>
                         <div class="article__wrap">
                             <div class="article__item">
-                                <div class="contact-icon" id="gps"></div>
-                                <a class="link-hover white-linear" href="https://goo.gl/maps/1PkWRiMLC1dbMMaz5">Mogilev, Belarus</a>
+                                <a class="contact-item link-hover" href="https://goo.gl/maps/1PkWRiMLC1dbMMaz5">
+                                    <div class="contact-icon" id="gps"></div>
+                                    <div class="contact-title white-linear">Mogilev, Belarus</div>
+                                </a>
                             </div>
                             <div class="article__item">
-                                <div class="contact-icon" id="phone"></div>
-                                <a class="link-hover white-linear" href="tel:+375447775163">+375 44 777-51-63</a>
+                                <a class="contact-item link-hover" href="tel:+375447775163">
+                                    <div class="contact-icon" id="phone"></div>
+                                    <div class="contact-title white-linear">+375 44 777-51-63</div>
+                                </a>
                             </div>
                             <div class="article__item">
-                                <div class="contact-icon" id="mail"></div>
-                                <a class="link-hover white-linear" href="mailto:artem.pasko.dev@gmail.com">artem.pasko.dev@gmail.com</a>
+                                <a class="contact-item link-hover" href="mailto:artem.pasko.dev@gmail.com">
+                                    <div class="contact-icon" id="mail"></div>
+                                    <div class="contact-title white-linear">artem.pasko.dev@gmail.com</div>
+                                </a>
                             </div>
                             <div class="article__item">
-                                <div class="contact-icon" id="linkedin"></div>
-                                <a class="link-hover white-linear" href="https://www.linkedin.com/in/guramiart/">guramiart</a>
+                                <a class="contact-item link-hover" href="https://www.linkedin.com/in/guramiart/">
+                                    <div class="contact-icon" id="linkedin"></div>
+                                    <div class="contact-title white-linear">guramiart</div>
+                                </a>
                             </div>
                             <div class="article__item">
-                                <div class="contact-icon" id="telegram"></div>
-                                <a class="link-hover white-linear" href="https://t.me/guramiArt">@guramiArt</a>
+                                <a class="contact-item link-hover" href="https://t.me/guramiArt">
+                                    <div class="contact-icon" id="telegram"></div>
+                                    <div class="contact-title white-linear">@guramiArt</div>
+                                </a>
                             </div>
                         </div>
                     </article>
@@ -104,7 +114,7 @@
                     </article>
                     <article class="article about">
                         <h2 class="right-title">About</h2>
-                        <span>Java Full Stack Developer with expertise in developing and maintaining web applications using Java, Spring, and Hibernate. Skilled in RESTful web services, Angular, automated testing, and deployment scripts using Jenkins.</span>
+                        <span class="about-content">Java Full Stack Developer with expertise in developing and maintaining web applications using Java, Spring, and Hibernate. Skilled in RESTful web services, Angular, automated testing, and deployment scripts using Jenkins.</span>
                     </article>
                     <article class="article work">
                         <h2 class="right-title">Work experience</h2>
@@ -132,17 +142,21 @@
                     <article class="article skills">
                         <h2 class="right-title">Skills and competences</h2>
                         <ul class="article__list">
-                            <li class="article__item">Core Java</li>
-                            <li class="article__item">Spring</li>
-                            <li class="article__item">RESTful APIs</li>
-                            <li class="article__item">Hibernate ORM</li>
-                            <li class="article__item">Gradle / Maven</li>
-                            <li class="article__item">SQL(MySQL, PostgreSQL)</li>
-                            <li class="article__item">HTML / CSS</li>
-                            <li class="article__item">JavaScript / TypeScript</li>
-                            <li class="article__item">Angular</li>
-                            <li class="article__item">UI/UX Design</li>
-                            <li class="article__item">Version Control / Git</li>
+                            <div class="column">
+                                <li class="article__item">Core Java</li>
+                                <li class="article__item">Spring</li>
+                                <li class="article__item">RESTful APIs</li>
+                                <li class="article__item">Hibernate ORM</li>
+                                <li class="article__item">Gradle / Maven</li>
+                                <li class="article__item">SQL(MySQL, PostgreSQL)</li>
+                            </div>
+                            <div class="column">
+                                <li class="article__item">HTML / CSS</li>
+                                <li class="article__item">JavaScript / TypeScript</li>
+                                <li class="article__item">Angular</li>
+                                <li class="article__item">UI/UX Design</li>
+                                <li class="article__item">Version Control / Git</li>
+                            </div>
                         </ul>
                     </article>
                     <article class="article certificate">
